@@ -1,6 +1,8 @@
 #include "config.h"
 #include "common.h"
 
+cdata_t config;
+
 /** Check if this character is not a useful character (space, newline, equal */
 int is_delimiter(char c) { return isspace(c) || c == '=' || c == '\r'; }
 

@@ -30,7 +30,7 @@ typedef struct {
     const char *config_file;
 } cdata_t;
 
-cdata_t config;
+extern cdata_t config;
 
 int config_init(const char *filename);
 void config_reload(void);

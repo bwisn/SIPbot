@@ -306,7 +306,7 @@ int sip_answer_call(call_t* call)
 
         rtp_session_signal_connect(call->r_session, "telephone-event",
                                    (RtpCallback)recv_tev_cb,
-                                   (unsigned long)call);
+                                   (void*)call);
 
         i = sdp_complete_200ok(ctx, call->did, answer, localip, 10500);
         if (i != 0)

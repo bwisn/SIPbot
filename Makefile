@@ -1,6 +1,6 @@
 CC=gcc
 CFLAGS=-g -Wall -pedantic
-LDFLAGS=-leXosip2 -losip2 -lrt -lm -lpthread -losipparser2 -lortp
+LDFLAGS=-lbctoolbox -leXosip2 -losip2 -lrt -lm -lpthread -losipparser2 -lortp
 SOURCES=src/main.c src/sdp.c src/sip.c src/log.c src/law.c src/filter.c \
 		src/call.c src/spawn.c src/cmds.c src/config.c
 OBJECTS=$(SOURCES:.c=.o)
